@@ -1,0 +1,8 @@
+# Klasörün nerede olduğundan bağımsız olarak tüm bin ve obj'leri engeller
+bin/
+obj/
+
+# Geliştirici araçları
+.vscode/
+*.user
+*.suo
