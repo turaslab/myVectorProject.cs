@@ -7,7 +7,7 @@ public struct Vector
         YComponent = y;
     }
 
-    public float Lenght()
+    public float Length()
     {
         return MathF.Sqrt(XComponent * XComponent + YComponent * YComponent);
     }

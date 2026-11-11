@@ -1,4 +1,5 @@
 ﻿
+using System.Security.Cryptography.X509Certificates;
 using Raylib_cs;
 using RaylibGame;
 
@@ -6,7 +7,13 @@ Raylib.InitWindow(Variables.width, Variables.height, "Vector Visualizer");
 Raylib.SetTargetFPS(60);
 
 /*Benim vektör*/
-Vector p1 = new Vector(6, 8);
+VectorRenderer vectorRenderer = new VectorRenderer();
+Vector p1 = new Vector(3, 4);
+
+int startX;
+int startY;
+int endX;
+int endY;
 
 while (!Raylib.WindowShouldClose())
 {
@@ -28,16 +35,16 @@ while (!Raylib.WindowShouldClose())
     // Koordinat eksenleri
     Raylib.DrawLine(Variables.width / 2, 0, Variables.width / 2, Variables.height, Color.White);
     Raylib.DrawLine(0, Variables.height / 2, Variables.width, Variables.height / 2, Color.White);
-
-
     // Vektör çizme   
 
-    VectorRenderer vectorRenderer = new VectorRenderer();
 
     vectorRenderer.RenderVector(p1);
     string text;
-    text = Convert.ToString(p1.Lenght());
-    Raylib.DrawText("Vector Lenght Is: " + text, 0, 0, 24, Color.Violet);
+    text = Convert.ToString(p1.Length());
+    Raylib.DrawText("Vector Length Is: " + text, 0, 0, 24, Color.Violet);
+
+    Raylib.DrawText("Your X Is: " + Variables.GetMouseX(), 0, 24, 24, Color.Violet);
+    Raylib.DrawText("Your Y Is: " + Variables.GetMouseY(), 0, 48, 24, Color.Violet);
 
     Raylib.EndDrawing();
 }
