@@ -1,5 +1,5 @@
 # myVectorProject.cs
----
+
 ## What's this project?
 It's a vector computation and simulation library for csharp.
 ## Why am i doin this in first place?
@@ -10,6 +10,6 @@ why would u even use mine right? even i wouldn't use it probably!
 ## Why it's suck?
 cuz i am learning ofc. and learning things suck. things made while learning
 are suck but teaching and has nostalgia.
----
+
 
 To my in-law-boss: I'm here. Waiting for you.
