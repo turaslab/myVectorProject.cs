@@ -35,9 +35,8 @@ while (!Raylib.WindowShouldClose())
     // Koordinat eksenleri
     Raylib.DrawLine(Variables.width / 2, 0, Variables.width / 2, Variables.height, Color.White);
     Raylib.DrawLine(0, Variables.height / 2, Variables.width, Variables.height / 2, Color.White);
-    // Vektör çizme   
-
-
+    // Vektör çizme
+    vectorRenderer.Update(ref p1);
     vectorRenderer.RenderVector(p1);
     string text;
     text = Convert.ToString(p1.Length());
