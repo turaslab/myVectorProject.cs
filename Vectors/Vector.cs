@@ -26,6 +26,8 @@ public struct Vector
     // Skalerle çarpma
     public static Vector operator *(Vector a, float scalar)
         => new Vector(a.XComponent * scalar, a.YComponent * scalar);
+    public static Vector operator *(float scalar, Vector a)
+        => new Vector(a.XComponent * scalar, a.YComponent * scalar);
 
     // Skalere bölme
     public static Vector operator /(Vector a, float scalar)
